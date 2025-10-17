@@ -1,0 +1,319 @@
+:root {
+  --bg-main: #1C1C1C;
+  --bg-card: #1a237e;
+  --text-primary: #ffffff;
+  --align-center: center;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header {
+  text-align: right;
+  margin: 10px 20px auto;
+}
+
+body {
+  background-image: linear-gradient(45deg, var(--bg-main), #3D3D3D);
+  color: var(--text-primary);
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden;
+  max-width: 1520px;
+
+}
+
+h1, h2, p {
+  background: none;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portifolio {
+  font-size: 150px;
+  font-weight: bold;
+  margin-top: 200px;
+  text-align: left;
+
+}
+
+.nome {
+  font-size: 25px;
+  margin: -20px 0 500px 100px;
+
+}
+
+.Titulo{
+  font-size: 80px;
+  text-align: var(--align-center);
+  margin: 200px 0 80px;
+
+}
+
+
+.texto {
+  max-width: 80%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: var(--text-primary);
+  padding: 0 50px;
+
+}
+
+.edu, .exp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  color: var(--text-primary);
+  text-align: var(--align-center);
+
+}
+
+.card{
+  background-image: linear-gradient(-45deg, #2D10F5, var(--bg-card));
+  padding: 60px 40px;
+  border-radius: 30px;
+  color: var(--text-primary);
+  max-width: 60%;
+  text-align: left;
+  margin: 30px auto;
+  max-height: 900px;
+
+}
+
+.proj > div {
+  background-image: linear-gradient(-45deg, #2D10F5, var(--bg-card));
+  padding: 40px ;
+  border-radius: 30px;
+  max-width: 15rem;
+  color: var(--text-primary);
+  text-align: var(--align-center);
+
+}
+
+.card:hover{
+  transform: translateY(-5px);
+
+}
+
+.Software, .Habilidades{
+  list-style: none;
+  padding: 0;
+  min-height: 300px;
+  margin: 250px auto;
+
+}
+
+.Software h2, .Habilidades h2{
+  color: var(--text-primary);
+  text-align: var(--align-center);
+}
+
+
+.progress-container{
+  width: 90%;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 8px auto auto auto;
+
+}
+
+[class^= progress-bar-] {
+  width: 0;
+  height: 10px;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-size: 10px;
+  text-align: right;
+  line-height: 12px;
+
+}
+
+@keyframes load {
+  to {
+    width: var(--percent);
+  }
+}
+
+.progress-bar-java {
+  --percent: 80%;
+  animation: load 16s forwards;
+}
+
+.progress-bar-python {
+  --percent: 70%;
+  animation: load 14s forwards;
+}
+
+.progress-bar-kotlin {
+  --percent: 50%;
+  animation: load 10s forwards;
+}
+
+.progress-bar-SQL {
+  --percent: 90%;
+  animation: load 18s forwards;
+}
+
+.progress-bar-Clojure {
+  --percent: 70%;
+  animation: load 14s forwards;
+}
+
+.progress-bar-html {
+  --percent: 60%;
+  animation: load 12s forwards;
+}
+
+.progress-bar-godot {
+  --percent: 60%;
+  animation: load 12s forwards;
+}
+
+.progress-bar-POO {
+  --percent: 80%;
+  animation: load 16s forwards;
+}
+
+.progress-bar-IA {
+  --percent: 60%;
+  animation: load 12s forwards;
+}
+
+.progress-bar-UX {
+  --percent: 50%;
+  animation: load 10s forwards;
+}
+
+.progress-bar-por {
+  --percent: 90%;
+  animation: load 18s forwards;
+}
+
+.progress-bar-ingles {
+  --percent: 70%;
+  animation: load 14s forwards;
+}
+
+.proj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px auto;
+  max-width: 600px;
+
+}
+
+
+.proj h2 {
+  text-align: var(--align-center);
+  margin-bottom: 15px;
+}
+
+.proj p {
+  color: var(--text-primary);
+  margin: 10px 0;
+}
+
+.proj a {
+  color: var(--text-primary);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.rodape {
+  background-image: linear-gradient(-45deg, #2D10F5, var(--bg-card));
+  border-radius: 80px;
+  max-width: 90%;
+  margin: auto;
+
+}
+
+
+.rodape p{
+  padding: 10px;
+  margin: auto auto auto 20px;
+
+}
+
+.rodape a {
+  display: flex;
+  gap: 10px;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.rodape h2{
+  text-align: var(--align-center);
+
+}
+
+
+.copyright {
+  font-size: 12px;
+  margin: 20px 65px;
+  text-align: right;
+
+}
+
+
+
+
+@media (max-width: 1400px) {
+
+
+  .portifolio {
+    font-size: 70px;
+    text-align: var(--align-center);
+  }
+
+  .nome {
+    font-size: 16px;
+    text-align: var(--align-center);
+    margin: 0;
+
+  }
+
+  .Titulo{
+    font-size: 40px;
+    text-align: var(--align-center);
+    margin: 60px 0
+  }
+
+  .texto {
+    padding: 20px;
+    width: 80%;
+
+  }
+
+  .proj, .Software, .Habilidades{
+    flex-direction: column;
+    align-items: var(--align-center);
+  }
+
+  .card{
+    width: 90%;
+  }
+
+  .rodape{
+    width: 90%;
+    font-size: 10px;
+  }
+}
+
+
