@@ -273,33 +273,44 @@ ul {
 
 @media (max-width: 1000px) {
 
+  header {
+    font-size: 10px;
+  }
+
   .portifolio {
-    font-size: 70px;
+    font-size: 30px;
     text-align: var(--align-center);
 
   }
 
   .nome {
-    font-size: 16px;
+    font-size: 6px;
     text-align: var(--align-center);
 
   }
 
   .Titulo {
-    font-size: 40px;
+    font-size: 25px;
     text-align: var(--align-center);
+    margin: 100px 0 60px;
 
   }
 
   .texto {
-    width: 80%;
+    width: 90%;
+    font-size: 8px;
 
   }
 
   .proj, .Software, .Habilidades {
     flex-direction: column;
     align-items: var(--align-center);
+    font-size: 12px;
 
+  }
+
+  .edu, .exp {
+    font-size: 8px;
   }
 
   .card {
