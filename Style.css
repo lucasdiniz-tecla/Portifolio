@@ -281,19 +281,17 @@ ul {
   .nome {
     font-size: 16px;
     text-align: var(--align-center);
-    margin: 0;
 
   }
 
   .Titulo{
     font-size: 40px;
     text-align: var(--align-center);
-    margin: 60px 0
+
 
   }
 
   .texto {
-    padding: 20px;
     width: 80%;
 
   }
@@ -334,13 +332,11 @@ ul {
   .Titulo{
     font-size: 100px;
     text-align: var(--align-center);
-    margin: 60px 0;
 
   }
 
   .texto {
     font-size: 40px;
-    padding: 20px;
     width: 80%;
 
   }
