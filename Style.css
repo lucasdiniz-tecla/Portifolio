@@ -14,8 +14,9 @@
 }
 
 header {
-  text-align: right;
-  margin: 10px 20px auto;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 body {
@@ -23,12 +24,6 @@ body {
   color: var(--text-primary);
   font-family: 'Courier New', Courier, monospace;
   overflow-x: hidden;
-  max-width: 1520px;
-
-}
-
-h1, h2, p {
-  background: none;
 
 }
 
@@ -36,6 +31,7 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 .portifolio {
@@ -48,14 +44,14 @@ ul {
 
 .nome {
   font-size: 25px;
-  margin: -20px 0 500px 100px;
+  margin: -20px 0 250px 100px;
 
 }
 
 .Titulo{
   font-size: 80px;
   text-align: var(--align-center);
-  margin: 200px 0 80px;
+  margin: 200px 0 100px;
 
 }
 
@@ -63,7 +59,8 @@ ul {
   max-width: 80%;
   text-align: justify;
   line-height: 1.5;
-  margin: 0 auto;
+  display: flex;
+  margin: auto;
   color: var(--text-primary);
   padding: 0 50px;
 
@@ -71,26 +68,23 @@ ul {
 
 .edu, .exp{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
+  flex-direction: column;
+  gap: 40px;
   color: var(--text-primary);
   text-align: var(--align-center);
 
 }
 
-.card{
+.Software, .Habilidades{
   background-image: linear-gradient(-45deg, #2D10F5, var(--bg-card));
-  padding: 60px 40px;
   border-radius: 30px;
-  color: var(--text-primary);
   max-width: 60%;
-  text-align: left;
-  margin: 30px auto;
+  min-height: 300px;
   max-height: 900px;
+  margin: 250px auto;
 
 }
+
 
 .proj > div {
   background-image: linear-gradient(-45deg, #2D10F5, var(--bg-card));
@@ -102,22 +96,16 @@ ul {
 
 }
 
-.card:hover{
+.proj > div:hover{
   transform: translateY(-5px);
 
 }
 
-.Software, .Habilidades{
-  list-style: none;
-  padding: 0;
-  min-height: 300px;
-  margin: 250px auto;
-
-}
 
 .Software h2, .Habilidades h2{
   color: var(--text-primary);
   text-align: var(--align-center);
+
 }
 
 .progress-container{
@@ -144,67 +132,80 @@ ul {
 @keyframes load {
   to {
     width: var(--percent);
+
   }
 }
 
 .progress-bar-java {
   --percent: 80%;
   animation: load 16s forwards;
+
 }
 
 .progress-bar-python {
   --percent: 70%;
   animation: load 14s forwards;
+
 }
 
 .progress-bar-kotlin {
   --percent: 50%;
   animation: load 10s forwards;
+
 }
 
 .progress-bar-SQL {
   --percent: 90%;
   animation: load 18s forwards;
+
 }
 
 .progress-bar-Clojure {
   --percent: 70%;
   animation: load 14s forwards;
+
 }
 
 .progress-bar-html {
   --percent: 60%;
   animation: load 12s forwards;
+
 }
 
 .progress-bar-godot {
   --percent: 60%;
   animation: load 12s forwards;
+
 }
 
 .progress-bar-POO {
   --percent: 80%;
   animation: load 16s forwards;
+
 }
 
 .progress-bar-IA {
   --percent: 60%;
   animation: load 12s forwards;
+
 }
 
 .progress-bar-UX {
   --percent: 50%;
   animation: load 10s forwards;
+
 }
 
 .progress-bar-por {
   --percent: 90%;
   animation: load 18s forwards;
+
 }
 
 .progress-bar-ingles {
   --percent: 70%;
   animation: load 14s forwards;
+
 }
 
 .proj {
@@ -220,17 +221,19 @@ ul {
 .proj h2 {
   text-align: var(--align-center);
   margin-bottom: 15px;
+
 }
 
 .proj p {
-  color: var(--text-primary);
-  margin: 10px 0;
+  margin: 10px ;
+
 }
 
 .proj a {
   color: var(--text-primary);
   font-weight: bold;
   text-decoration: underline;
+
 }
 
 .rodape {
@@ -252,13 +255,13 @@ ul {
   gap: 10px;
   color: var(--text-primary);
   font-weight: bold;
+
 }
 
 .rodape h2{
   text-align: var(--align-center);
 
 }
-
 
 .copyright {
   font-size: 12px;
@@ -267,12 +270,12 @@ ul {
 
 }
 
-@media (max-width: 1400px) {
-
+@media (max-width: 1000px) {
 
   .portifolio {
     font-size: 70px;
     text-align: var(--align-center);
+
   }
 
   .nome {
@@ -286,6 +289,7 @@ ul {
     font-size: 40px;
     text-align: var(--align-center);
     margin: 60px 0
+
   }
 
   .texto {
@@ -297,16 +301,17 @@ ul {
   .proj, .Software, .Habilidades{
     flex-direction: column;
     align-items: var(--align-center);
+
   }
 
   .card{
     width: 90%;
+
   }
 
   .rodape{
     width: 90%;
     font-size: 10px;
+
   }
 }
-
-
