@@ -48,7 +48,7 @@ ul {
 
 }
 
-.Titulo{
+.Titulo {
   font-size: 80px;
   text-align: var(--align-center);
   margin: 250px 0 100px;
@@ -66,7 +66,7 @@ ul {
 
 }
 
-.edu, .exp{
+.edu, .exp {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -75,7 +75,7 @@ ul {
 
 }
 
-.Software, .Habilidades{
+.Software, .Habilidades {
   background-image: linear-gradient(-45deg, #2D10F5, var(--bg-card));
   border-radius: 30px;
   max-width: 60%;
@@ -96,19 +96,19 @@ ul {
 
 }
 
-.proj > div:hover{
+.proj > div:hover {
   transform: translateY(-5px);
 
 }
 
 
-.Software h2, .Habilidades h2{
+.Software h2, .Habilidades h2 {
   color: var(--text-primary);
   text-align: var(--align-center);
 
 }
 
-.progress-container{
+.progress-container {
   width: 90%;
   background-color: #f3f3f3;
   border: 1px solid #ccc;
@@ -244,7 +244,7 @@ ul {
 
 }
 
-.rodape p{
+.rodape p {
   padding: 10px;
   margin: auto auto auto 20px;
 
@@ -258,7 +258,7 @@ ul {
 
 }
 
-.rodape h2{
+.rodape h2 {
   text-align: var(--align-center);
 
 }
@@ -284,10 +284,9 @@ ul {
 
   }
 
-  .Titulo{
+  .Titulo {
     font-size: 40px;
     text-align: var(--align-center);
-
 
   }
 
@@ -296,18 +295,18 @@ ul {
 
   }
 
-  .proj, .Software, .Habilidades{
+  .proj, .Software, .Habilidades {
     flex-direction: column;
     align-items: var(--align-center);
 
   }
 
-  .card{
+  .card {
     width: 90%;
 
   }
 
-  .rodape{
+  .rodape {
     width: 90%;
     font-size: 10px;
 
@@ -329,7 +328,7 @@ ul {
 
   }
 
-  .Titulo{
+  .Titulo {
     font-size: 100px;
     text-align: var(--align-center);
 
@@ -343,9 +342,10 @@ ul {
 
   .edu, .exp {
     font-size: 40px;
+
   }
 
-  .Software, .Habilidades{
+  .Software, .Habilidades {
     font-size: 70px;
     flex-direction: column;
     align-items: var(--align-center);
@@ -359,7 +359,7 @@ ul {
 
   }
 
-  .rodape{
+  .rodape {
     width: 90%;
     font-size: 50px;
 
