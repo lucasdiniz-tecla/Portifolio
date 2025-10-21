@@ -13,12 +13,6 @@
 
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-
-}
-
 body {
   background-color: var(--bg-main);
   color: var(--text-primary);
@@ -26,32 +20,41 @@ body {
 
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+}
+
 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 
 }
 
 .portifolio {
-  font-size: 150px;
+  font-size: 130px;
   font-weight: bold;
   display: flex;
   justify-content: center;
 
-
 }
 
 .nome {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 
 }
 
 .Titulo {
-  font-size: 80px;
+  font-size: 70px;
   text-align: var(--align-center);
-  margin: 200px 0 100px;
+  margin: 150px 0 100px;
 
 }
 
@@ -74,23 +77,21 @@ ul {
 
 }
 
-
 .Software {
   background-color: var(--bg-card);
   border-radius: 30px;
   max-width: 60%;
   min-height: 350px;
-  margin: 200px auto;
+  margin: 150px auto;
 
 }
-
 
 .Habilidades {
   background-color: var(--bg-card);
   border-radius: 30px;
   max-width: 60%;
   min-height: 300px;
-  margin: 200px auto;
+  margin: 150px auto;
 
 }
 
@@ -220,8 +221,8 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin: 80px auto;
   max-width: 600px;
+  margin: 100px auto;
 
 }
 
