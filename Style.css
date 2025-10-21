@@ -126,6 +126,7 @@ ul {
 
 }
 
+
 [class^= progress-bar-] {
   width: 0;
   height: 10px;
@@ -137,82 +138,67 @@ ul {
 
 }
 
-@keyframes load {
-  to {
-    width: var(--percent);
-
-  }
-}
-
 .progress-bar-java {
-  --percent: 80%;
-  animation: load 16s forwards;
-
+  transition: width 8s ease-in-out;
 }
 
 .progress-bar-python {
-  --percent: 70%;
-  animation: load 14s forwards;
+  transition: width 7s ease-in-out;
 
 }
 
 .progress-bar-kotlin {
-  --percent: 50%;
-  animation: load 10s forwards;
+  transition: width 5s ease-in-out;
 
 }
 
 .progress-bar-SQL {
-  --percent: 90%;
-  animation: load 18s forwards;
+  transition: width 9s ease-in-out;
 
 }
 
 .progress-bar-Clojure {
-  --percent: 70%;
-  animation: load 14s forwards;
+  transition: width 7s ease-in-out;
 
 }
 
 .progress-bar-html {
-  --percent: 60%;
-  animation: load 12s forwards;
+  transition: width 6s ease-in-out;
 
 }
 
 .progress-bar-godot {
-  --percent: 60%;
-  animation: load 12s forwards;
+  transition: width 6s ease-in-out;
 
 }
 
 .progress-bar-POO {
-  --percent: 80%;
-  animation: load 16s forwards;
+  transition: width 8s ease-in-out;
 
 }
 
 .progress-bar-IA {
-  --percent: 60%;
-  animation: load 12s forwards;
+  transition: width 6s ease-in-out;
 
 }
 
 .progress-bar-UX {
-  --percent: 50%;
-  animation: load 10s forwards;
+  transition: width 5s ease-in-out;
 
 }
 
 .progress-bar-por {
-  --percent: 90%;
-  animation: load 18s forwards;
+  transition: width 9s ease-in-out;
 
 }
 
 .progress-bar-ingles {
-  --percent: 70%;
-  animation: load 14s forwards;
+  transition: width 7s ease-in-out;
+
+}
+
+.progress-bar-Estrutura {
+  transition: width 7s ease-in-out;
 
 }
 
